@@ -2,7 +2,7 @@
  * Riley Boyd, Chris Hall
  * Final Project for JavaFX
  * *Idea Still Pending*
- * Testing Sync Request. NIGGER
+ * Testing Sync Request. CUNT LICKERS!!
  */
 package finalproject;
 
