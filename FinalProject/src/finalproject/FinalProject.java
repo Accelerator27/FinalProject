@@ -11,6 +11,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
@@ -22,20 +23,22 @@ public class FinalProject extends Application {
     
     @Override
     public void start(Stage primaryStage) {
+        BorderPane pane = new BorderPane();
         Button btn = new Button();
+        Button btn2 = new Button();
         btn.setText("Say 'Hello World'");
+        pane.setLeft(btn);
         btn.setOnAction(new EventHandler<ActionEvent>() {
-            
+        
             @Override
             public void handle(ActionEvent event) {
-                System.out.println("Hello World!");
+                
+                btn2.setText("Hey");
+                pane.setRight(btn2);
             }
         });
-        
-        StackPane root = new StackPane();
-        root.getChildren().add(btn);
-        
-        Scene scene = new Scene(root, 300, 250);
+       
+        Scene scene = new Scene(pane, 600, 500);
         
         primaryStage.setTitle("Hello World!");
         primaryStage.setScene(scene);
