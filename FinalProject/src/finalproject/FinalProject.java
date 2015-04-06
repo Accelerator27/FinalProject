@@ -17,7 +17,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author Riley Boyd
+ * @author Jewish Cunt
  */
 public class FinalProject extends Application {
     
